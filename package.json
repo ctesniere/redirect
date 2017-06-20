@@ -1,0 +1,32 @@
+{
+  "name": "redirect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:watch": "webpack -w"
+  },
+  "author": "Cedric TESNIERE (http://github.com/ctesniere)",
+  "license": "ISC",
+  "website": "https://ctesniere.github.io/redirect",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "crypto-js": "^3.1.9-1",
+    "generate-password": "^1.3.0",
+    "inquirer": "^3.0.6",
+    "lodash": "^4.17.4",
+    "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.18.1",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^3.19.0",
+    "html-loader": "^0.4.5",
+    "webpack": "^2.6.1"
+  }
+}
