@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "build:watch": "webpack -w"
+    "build:watch": "webpack -w",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Cedric TESNIERE (http://github.com/ctesniere)",
   "license": "ISC",
@@ -19,7 +21,8 @@
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "moment": "^2.18.1",
-    "uuid": "^3.0.1"
+    "uuid": "^3.0.1",
+    "snyk": "^1.319.1"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -28,5 +31,6 @@
     "eslint": "^3.19.0",
     "html-loader": "^0.4.5",
     "webpack": "^2.6.1"
-  }
+  },
+  "snyk": true
 }
